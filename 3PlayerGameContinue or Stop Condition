@@ -1,0 +1,32 @@
+/*
+IF YOU HAVE A 3 PLAYER GAME AND WANT TO STOP WHEN 2 PLAYER HIT THE GOAL THIS IS THE BOOLEAN CONDITION
+
+if(!((a >= 100 && b >= 100)  ||  (a >= 100 && c >= 100) ||   (b >= 100 && c >= 100)  )) printf("CONTINUE");
+  else printf("STOP");
+  
+  CAN CHANGE 100 TO OTHER GOALS OR NUMBER !!
+*/
+
+
+//TEMPLATE
+#include <stdio.h>
+#define ARR_SIZE 10
+#define LEN_ARR(x) sizeof(x) / sizeof(x[0])
+// 0 is false 1 is true
+//BINARY SEARCH
+// int func(){
+//   if(a >= 100 && b >= 100) /*0*/ return 0;
+//   else if(a >= 100 && c >= 100)/*0*/ return 0;
+//   else if(b >= 100 && c >= 100)/*0*/ return 0;
+//   else return 1;
+// }
+
+int main(){
+  int a,b,c;
+  printf("Enter a b c :");
+  scanf("%d%d%d",&a,&b,&c );
+  if(!((a >= 100 && b >= 100)  ||  (a >= 100 && c >= 100) ||   (b >= 100 && c >= 100)  )) printf("CONTINUE");
+  else printf("STOP");
+return 0;
+}
+
